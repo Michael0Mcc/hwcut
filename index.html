@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="icons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="icons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="icons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="icons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="icons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="icons/mstile-310x310.png" />
+  <title>HW Cut | Selection</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+
+  <div class="ui inverted very padded segment">
+    <div class="ui huge teal centered header" id="header">
+      HW Cut
+    </div>
+  </div>
+
+  <div class="ui centered grid" id="selection">
+
+    <div class="ten wide column">
+      <div class="ui padded secondary inverted segment selection" onclick="link(1)">
+        <div class="ui large header">
+            Chemical Balancing
+        </div>
+      </div>
+    </div>
+
+    <div class="ten wide column">
+        <div class="ui padded secondary inverted segment selection">
+          <div class="ui large header">
+            Algebra (Coming Soon...)
+          </div>
+        </div>
+    </div>
+
+    <div class="ten wide column">
+      <div class="ui padded secondary inverted segment selection">
+          <div class="ui large header">
+            More to come soon
+          </div>
+      </div>
+    </div>
+
+    <div class="ten wide column">
+      <div class="ui padded secondary inverted segment selection">
+          <div class="ui large header">
+            More to come soon
+          </div>
+      </div>
+    </div>
+
+    <div class="ten wide column">
+      <div class="ui padded secondary inverted segment selection">
+          <div class="ui large header">
+            More to come soon
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ui container" id="balance">
+    <div class="ui form segments">
+      <div class="ui very padded segment">
+        <div class="field">
+            <label>Equation:</label>
+            <input type="text" placeholder="H2 + O2 = H2O" id="equation">
+            <br>
+            <br>
+            <div class="ui submit button" onclick="submit()">Solve</div>
+        </div>
+        </div>
+        <div class="ui secondary inverted very padded segment">
+          <div class="field">
+            <label>Balanced Equation:</label>
+            <div class="ui header" id="solved">2 H2 + O2 = 2 H2O</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui large inverted compact segment" id="home" onclick="home()">
+        <div class="ui header">
+          <i class="arrow left icon"></i>
+          <div class="content">
+            Home
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="manager.js"></script>
+    <script src="selection.js"></script>
+    <script src="balance.js"></script>
+  
+</body>
+</html>
